@@ -893,6 +893,7 @@ ul.slick-dots {
   position: absolute;
   top: 50%;
   left: 50%;
+  right: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -1339,7 +1340,8 @@ footer
 footer {
   padding: 80px 0px;
   background: rgb(51,155,158);
-  background: linear-gradient(145deg, rgba(51,155,158,1) 0%, rgba(104,204,152,1) 100%);
+  /*background: linear-gradient(145deg, rgba(51,155,158,1) 0%, rgba(104,204,152,1) 100%);*/
+  background-image:url(Footer.jpg);
 }
 
 footer .left-text-content p {
