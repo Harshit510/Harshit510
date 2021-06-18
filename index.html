@@ -1,346 +1,738 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <title>My portfolio</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-    <title>Harshit Rana - Portfolio</title>
-
-<!--
-
-Breezed Template
-
-https://templatemo.com/tm-543-breezed
-
--->
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-style.css"/>
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
 
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-
-    <link rel="stylesheet" href="assets/css/templatemo-breezed.css">
-
-    <link rel="stylesheet" href="assets/css/owl-carousel.css">
-
-    <link rel="stylesheet" href="assets/css/lightbox.css">
-
-    <link rel="stylesheet" href="assets/css/textandbg_anim.css">
-
-    </head>
+    <link rel="stylesheet" href="assets/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     
-    <body>
-    
-    <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>  
-    <!-- ***** Preloader End ***** -->
-    
-    
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
-                        <span style="text-shadow: 2px 2px #ff0000; text-decoration: line-through;">HR</span>
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li class="scroll-to-section"><a href="index.html" /*class="active"*/>Home</a></li>
-                            <li class="scroll-to-section"><a href="About Me.html">About</a></li>
-                            <li class="scroll-to-section"><a href="Projects.html">Projects</a></li>
-                            <li class="scroll-to-section"><a href="S&H.html">Skills & Hobbies</a></li>
-                            <!--<li class="submenu">
-                                <a href="javascript:;">Drop Down</a>
-                                <ul>
-                                    <li><a href="S&H.html">Skills and Hobbies</a></li>
-                                    <li><a href="Contact.html">Contact Me</a></li>
-                                    <li><a href="">FAQ's</a></li>
-                                    <li><a href="">Blog</a></li>
-                                </ul>
-                            </li>-->
-                            <li class="scroll-to-section"><a href="Contact.html">Contact Me</a></li> 
-                            <div class="search-icon">
-                                <a href="#search"><i class="fa fa-search"></i></a>
-                            </div>
-                        </ul>        
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
+    <link rel="stylesheet" href="assets/css/zoom.css">
+    <link rel="stylesheet" href="assets/css/progress1.css">
+    <link rel="stylesheet" href="cursor.css">
+
+  
+
+    <!--<link href="assets/css/rotate.css" rel="stylesheet" type="text/css" />-->
+    <script src="assets/js/rotate.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+
+    <style>
+    ul.about-info li span:first-child {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    color: #000000;
+    width: 140px;
+    }
+    ul.about-info li {
+    margin-bottom: 10px;
+    }
+    .d-flex {
+    display: flex;
+}
+.btn {
+  background-color: #d6d18f;
+  border: 1px solid black;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 18px;
+  text-align: center;
+  font-size: 15px;
+  margin: 5px -10px ;
+  opacity: 0.6;
+  transition: 0.3s;
+  
+  
+}
+.btn:active{
+  color: aqua;
+  column-width: 100px;
+}
+
+.active, .btn:hover {
+  opacity: 1;
+  background-color: aquamarine;
+  text-decoration: underline;
+  
+  
+}
+
+.mdq1 {
+  /**background-color: tan;
+  color: black;*/
+  font-size: 4vw;
+}
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px) {
+  .mdq1 {
+/**    background-color: blue;
+    color: white;*/
+    font-size: 4vw;
+  }
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+  .mdq1 {
+    /**background-color: olive;
+    color: white;*/
+    font-size: 2vw;
+  }
+}
+
+</style>
+  
+</head>
+
+  <body style="background-color: rgb(155, 150, 139);"> 
+    <section class="cursor">
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="assets/images/me1.jpg " alt="" /></a>
             </div>
-        </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
-    
-    <!-- ***** Search Area ***** -->
-    <div id="search">
-        <button type="button" class="close">×</button>
-        <form id="contact" action="#" method="get">
-            <fieldset>
-                <input type="search" name="q" placeholder="SEARCH KEYWORD(s)" aria-label="Search through site content">
-            </fieldset>
-            <fieldset>
-                <button type="submit" class="main-button">Search</button>
-            </fieldset>
-        </form>
-    </div>
-    
-    <!-- ***** Main Banner Area Start ***** -->
-    <div class="main-banner header-text" id="top">    
-        <div class="Modern-Slider">       
-            <!-- Item -->
-          <div class="item">
-            <div class="img-fill">
-              <img src="assets/images/galaxy.jpg" alt="galaxy">
-                <div class="text-content">
-                  <h3 style="font-size: 40px; font-family: Georgia, 'Times New Roman', Times, serif; letter-spacing: 0.4em; color: azure; text-shadow:2px 2px #e67540;">Harshit Rana</h3>
-                  <!--moving text-->
-                  <h1 class="ml15">
-                    <span class="word">IT Engineer</span>
-                  </h1>
-            
-                  <div class="container py-5">
-                    <div class="output" id="output">
-                      <h1 class="cursor"></h1>
-                    </div>
-                  </div>
-
-                </div>
+            <div class="author-content">
+              <h4>Harshit Rana</h4>
+              <span>IT Student</span>
+            </div>
+            <label style="width: 100%;">
+            <nav class="main-nav" role="navigation">
+            <ul class="list-zoom1" class="main-menu" >
+                <li><a href="#section0" class ="lcursor" style="font-size: 20px; font-weight: 600;">Home</a></li>
+                <li><a href="#section1" class ="lcursor" style="font-size: 20px; font-weight: 600;">About Me</a></li>
+                <li><a href="#section2" class ="lcursor" style="font-size: 20px; font-weight: 600;">Resume</a></li>
+         
+                <li><a href="#section4" class ="lcursor" style="font-size: 20px; font-weight: 600;">Contact Me</a></li>
+              </ul>
+            </nav></label>
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="https://fb.com/templatemo"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-rss"></i></a>
+                </li>
+              </ul>
             </div>
           </div>
-          <!-- // Item -->
         </div>
-    </div>
-    <div class="scroll-down scroll-to-section"><a href="#about"><i class="fa fa-arrow-down"></i></a></div>
-    <!-- ***** Main Banner Area End ***** -->
+      </div>
+      
 
-    <!-- ***** About Area Starts ***** -->
-    
-    <section class="section" id="about">
-        <a href="assets/images/formal.jpg"><img src="assets/images/formal.jpg" style="width:30%; height:30%;" class="cnt"></a>
+      <section class="section about-me" data-section="section0 " id="section0">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-xs-12">
-                    <div class="left-text-content">
-                        <div class="section-heading">
-                            <br>
-                            <h6>Info. :-</h6>
-                            <h2>Personal Information</h2>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="service-item">
-                                    <!--<img src="assets/images/service-item-01.png" alt="">-->
-                                    <h7 style="font-weight: 500; font-size:small;">Name :-</h7>
-                                    <h4 style="font-weight: 800; font-size: medium;">Harshit Bhikhubhai Rana</h4>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="service-item">
-                                    <h7 style="font-weight: 500; font-size:small;">Date Of Birth :-</h7>
-                                    <h4 style="font-weight: 800; font-size: medium;">October 5, 1999</h4>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="service-item">
-                                    <h7 style="font-weight: 500; font-size:small;">Address:-</h7>
-                                    <h4 style="font-weight: 800; font-size: medium;">Valsad, Gujarat, India.</h4>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="service-item">
-                                    <h7 style="font-weight: 500; font-size:small;">Pin Code:-</h7>
-                                    <h4 style="font-weight: 800; font-size: medium; font-family: Arial, Helvetica, sans-serif;">396 001</h4>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="service-item">
-                                    <h7 style="font-weight: 500; font-size:small;">Email-id:-</h7>
-                                    <h4 style="font-weight: 800; font-size: medium;">rharshit039@gmail.com</h4>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="service-item">
-                                    <!--<img src="assets/images/service-item-01.png" alt="">-->
-                                    <h7 style="font-weight: 500; font-size:small;">Contact No. :-</h7>
-                                    <h4 style="font-weight: 800; font-size: medium; font-family:Arial, Helvetica, sans-serif ; ">+91 8866547230</h4>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-12">
-                                <a href="assets/resume/Harshit_Resume.pdf" class="main-button-icon" target="_blank">
-                                    Download Resume <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-xs-12">
-                    <div class="right-text-content">
-                        <h2 style="font-family: Arial, Helvetica, sans-serif;">Introducing Myself...</h2><br>
-                        <p style="text-align: justify;">Hello Guy's, Myself Harshit Rana. I am from Valsad, Gujarat. Recently I have completed my Bachelor's of Engineering in 
-                        Information Technology field with good academic performance from G H Patel College of Enginnering and Technology, V. V. Nagar, 
-                        Anand.</p><br>
-                        <p style="text-align: justify;">In Technical Area, I am very much interested in Front-end Web Development, Software Development and Graphics Design. I am 
-                            very well organised and creative person. Creative in the sense whichever work I do I put some extra effort to present it to
-                            the people and attract them as compare to others. And also I am a Quick learner and a Team player. 
-                        </p><br>
-                        <p style="text-align: justify;">In Non-Technical side, I am very much interested in Cooking, playing sports like Cricket and Kabbadi. I also love to Listen 
-                            Music when I am feeling bored and stressed. I like to Observe Nature and capture it for my memories. You can also say these as my hobbies.
-                        </p>    
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** About Area Ends ***** -->
-
-    <!-- ***** Contact Us Area Starts *****--> 
-    <section class="section" id="contact-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-xs-12">
-                    <div class="left-text-content">
-                        <div class="section-heading">
-                            <h6>Contact Me</h6>
-                            <h2>Feel free to keep in touch with Me</h2>
-                        </div>
-                        <ul class="contact-info">
-                            <li style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><img src="assets/images/contact-info-01.png" alt="">+91 88665 47230</li>
-                            <li style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><img src="assets/images/contact-info-02.png" alt="">rharshit039@gmail.com</li>
-                            <a href="https://harshit510.github.io/Harshit510/"><li style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"><img src="assets/images/contact-info-03.png" alt="">harshit510.github.io/Harshit510/</li></a>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-8 col-xs-12">
-                    <div class="contact-form">
-                        <form id="contact" action="send_form_email.php" method="POST">
-                          <div class="row">
-                            <div class="col-md-6 col-sm-12">
-                              <fieldset>
-                                <input name="name" type="text" id="name" placeholder="Your Name *" required="">
-                              </fieldset>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                              <fieldset>
-                                <input name="phone" type="text" id="phone" placeholder="Your Phone" required="">
-                              </fieldset>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                              <fieldset>
-                                <input name="email" type="email" id="email" placeholder="Your Email *" required="">
-                              </fieldset>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                              <fieldset>
-                                <input name="subject" type="text" id="subject" placeholder="Subject">
-                              </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                              <fieldset>
-                                <textarea name="message" rows="6" id="message" placeholder="Message" required=""></textarea>
-                              </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                              <fieldset>
-                                <button type="submit" id="form-submit" class="main-button-icon">Send Message Now <i class="fa fa-arrow-right"></i></button>
-                              </fieldset>
-                            </div>
-                          </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-     <!--***** Contact Us Area Ends ***** -->
-    
-    <!-- ***** Footer Start *****--> 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xs-12">
-                    <div class="left-text-content">
-                        <p style="color: rgb(114, 61, 26); font-size: medium; font-weight: 500; text-shadow: 2px 2px #8fbb5d; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Copyright &copy; 2021 Harshit Rana</p> 
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xs-12">
-                    <div class="right-text-content">
-                        <ul class="social-icons">
-                            <li><p style="color: rgb(114, 61, 26); font-size: medium; font-weight: 500; text-shadow: 2px 2px #8fbb5d; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Follow Me</p></li>
-                            <li><a rel="nofollow" href="https://fb.com/harshit.rana.35325"><i class="fa fa-facebook"></i></a></li>
-                            <li><a rel="nofollow" href="https://twitter.com/Harshit039"><i class="fa fa-twitter"></i></a></li>
-                            <li><a rel="nofollow" href="https://www.linkedin.com/in/harshit-rana-254740154"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a rel="nofollow" href="https://www.instagram.com/r_harshit510"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    
-
-     <!--jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!-- Plugins -->
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script> 
-    <script src="assets/js/slick.js"></script> 
-    <script src="assets/js/lightbox.js"></script> 
-    <script src="assets/js/isotope.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> 
-    <script src="assets/js/textandbg_anim.js"></script>
-    
-    <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
-
-    <script>
-
-        $(function() {
-            var selectedClass = "";
-            $("p").click(function(){
-            selectedClass = $(this).attr("data-rel");
-            $("#portfolio").fadeTo(50, 0.1);
-                $("#portfolio div").not("."+selectedClass).fadeOut();
-            setTimeout(function() {
-              $("."+selectedClass).fadeIn();
-              $("#portfolio").fadeTo(50, 1);
-            }, 500);
+          <!--<img src="assets/images/1.png" alt="" width= "150" heigth="150" style="width: 110px; text-align: center; height: 110px; position: absolute; margin : 0 auto; z-index: 0; padding-top: 20px;" />           
+          <img src="assets/images/2.png" alt="" width= "150" heigth="150" style="width: 110px; text-align: center; height: 110px; position: absolute; margin-left : 100px; z-index: 0; padding-top: 20px; text-indent: 100px; text-align: center;" />
+          --><a style="color: lightblue; text-shadow:  1px 1px red; margin-bottom: 50px;" class="navbar-brand" href="index.html"><span style="color: rgb(224, 230, 173); text-align: left; ">H</span></a>
+          <!--<button  class="navbar-toggler" type="button" data-toggle="collapse">
+            <span class="oi oi-menu"></span> Menu
+          </button>-->
+          <div   style="margin-left:5%; margin-top: 10%;">
+          <h5 class="mdq1" style="text-align: center; color: burlywood; font-size: 40px;text-align: left; margin-left: -30px; width: 50%;">Hey I'm</h5>
+          <h1 style="text-align: center; color: burlywood; font-size: 60px; text-shadow: blueviolet;   text-shadow:  1px 1px red; text-align: left;margin-left: -30px; width: 80%;">Harshit Rana</h1>
+			  				<h2 style="text-align: center; color: burlywood; font-size: 40px; text-align: left;margin-left: -30px; ">I'm a
                 
-            });
-        });
+                <span style="font-size: 30px; color: burlywood; font-size: 40px;text-decoration: underline; text-align: left;  "
+								     class="txt-rotate"
+								     data-period="2000"
+								     data-rotate='[ "Web Designer.", "Developer.", "Graphic Designer.","Team Player.","Quick Learner.","Creative Person."]'></span>
+                    </h2>
+                  </div>
+                </div>
+              </section>
+         
+             
+              <section class="section about-me" data-section="section1 " id="section1">
+                <div class="container">
+          <div class="section-heading" >
+            <h2>About Me</h2>
+            <div class="line-dec"></div>
+          </div>
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="assets/images/me.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <!--<span style="font-size: 25px; padding-bottom: 20px ;">
+                  Name :           Harshit Rana</span><br>
+                  <span style="font-size: 25px; padding-bottom: 20px ;">
+                  Date of Birth :  October 5, 1999
+                  </span><br>
+                  <span style="font-size: 25px; padding-bottom: 20px ;">
+                    Address :  Valsad, Gujarat, India
+                    </span>-->
+                    <ul class="about-info mt-4 px-md-0 px-2" style="font-size: 20px;">
+                    <li class="d-flex" ><img src="assets/icon/name.png" style="width: 10%;" /> <span style="width: 50%; margin-left: 50px;">: &nbsp;&nbsp;Harshit Rana</span></li>
+                    <li class="d-flex" ><img src="assets/icon/DOB.png" style="width: 10%;" /><span style="width: 60%; margin-left: 50px;">:&nbsp;&nbsp;October 5, 1999</span></li>
+                    <li class="d-flex" ><img src="assets/icon/add.png" style="width: 10%;" /><span style="width: 70%; margin-left: 50px;">:&nbsp;&nbsp;Valsad, Gujarat, India</span></li>
+                    <li class="d-flex" ><img src="assets/icon/zip.png" style="width: 10%;" /><span style="width: 40%; margin-left: 50px;">:&nbsp;&nbsp;396 001</span></li>
+                    <li class="d-flex" ><img src="assets/icon/gmail.png" style="width: 10%;"/><span style="width: 50%; margin-left: 50px;">:&nbsp;&nbsp;rharshit039@gmail.com</span></li>
+                    <li class="d-flex" ><img src="assets/icon/call1.png" style="width: 10%;" /><span style="width: 60%; margin-left: 50px;">:&nbsp;&nbsp;+91 88665 47230 </span></li>
+                  </ul>
+                    <br>
+              
+                    <span style="text-orientation: initial; width: fit-content; text-align: center; font-size: large;">Final Year Information Technology Undergraduate Student from G H Patel College of Engineering and Technology.</span>
+                    <br>
+                    <br>
+                    <p style="text-align: center;"><a href="#" class="bt bt:hover bt-primary py-3 px-3">Download Resume</a></p>
+                  </div>
+              </div>
+            </div>
+          </div>        
+      </section>
 
-        $(".bar").each(function(){
-        $(this).find(".bar-inner").animate({
-        width: $(this).attr("data-width")
-        },2000)
+      <section class="section my-services" data-section="section2" id="section2">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Resume</h2>
+          </div>
+          <div class="row">
+          <div class="col-md-3">
+				    <nav  id="nav">
+					    <ul class="list-zoom" >
+					      <li class="btn" ><a href="#page-1"  class="current"  id="#nav li a.current:after" >Education</a></li><br>
+					      <li class="btn"><a href="#page-2"   class="current" id="#nav li a.current:after" >Certification</a></li><br>
+					      <li class="btn"><a href="#page-3"   class="current" id="#nav li a.current:after" >Leadership</a></li><br>
+                <li class="btn"><a href="#page-4"  class="current" id="#nav li a.current:after" >Skills</a></li>
+					    </ul>
+            </nav>
+          </div>
+        
+          
+          <div class="col-md-9">
+					  <div id="page-1">
+              <h2 style="color: cornflowerblue; font-weight: 800;">Education</h2>
+              <dl >
+              <dt style="color: chocolate; font-size: 21px; font-weight: 700;">Bachelor of Engineering in Information Technology &nbsp; //  2017 - Present</dt>
+              <dd style="color: rgb(196, 216, 126); font-size: 18px; font-weight: 500;  ">G H Patel College of Engineering and Technology,<br>Vallabh Vidhyanagar, Anand, Gujarat, India<br>9.19 CPI & 9.66 CGPA upto 6 Semster</dd>
+          
+              <dt style="color: chocolate; font-size: 21px; font-weight: 700;">11th-12th (Senior Secondary Education)  &nbsp;//  2015 - 2017</dt>
+              <dd style="color: rgb(196, 216, 126); font-size: 18px; font-weight: 500;">GHSEB Board (State Board)<br>96.83 Percentile</dd>
+              </dl>
+              </div>
+              <br>
+              <div  id="page-2">
+                <h2 style="color: cornflowerblue; font-weight: 800;">Certification</h2>
+                <dl style="list-style-type: square; color:rgb(196, 216, 126); font-size: 18px; font-weight: 500;">
+                  <li>Web Design for Everybody: Basics of Web Development & Coding Specialization of 5 courses from Coursera.</li>
+                  <li>Responsive Website Development And Design Specialization of 2 courses from Coursera.</li>
+                  <!--<li>AWS Fundamentals: Going Cloud-Native course from Coursera</li>-->
+                  <li>Python for Everybody Specialization of 2 courses from Coursera.</li>
+                  <li>Career-Edge-Knockdown the Lockdown online course offered by TCS iON. </li>
+                </dl>
+              </div>
+              <br>  
+              <div id="page-3">
+                <h2 style="color: cornflowerblue; font-weight: 800;">Leadership</h2>
+                <dl style="list-style-type: square;">
+                  <dt style="color: chocolate; font-size: 21px; font-weight: 700;">Member of institute’s IEEE Student Branch &nbsp;// 2019-2020</dt>
+                  <li style="color: rgb(196, 216, 126); font-size: 18px; font-weight: 500;">Managed 2 event as a part of committee member and also part of Design team. </li>
+                  <dt style="color: chocolate; font-size: 21px; font-weight: 700;">Member of institute’s ISA Student Branch &nbsp;// 2018-2019</dt>
+                  <li style="color: rgb(196, 216, 126); font-size: 18px; font-weight: 500;">Managed 2 event as a part of committee member.</li>
+                  <dt style="color: chocolate; font-size: 21px; font-weight: 700;">Member of institute’s ISTE Student Branch &nbsp;// 2017 - 2021</dt>
+                  <li style="color: rgb(196, 216, 126); font-size: 18px; font-weight: 500;">Managed and Co-ordinated of Skill Enhancement Webinar Series</li>
+                  <dt style="color: chocolate; font-size: 21px; font-weight: 700;">Member of Departmental club- TechknowTalk Club &nbsp;// 2018 - 2021</dt>
+                  <li style="color: rgb(196, 216, 126); font-size: 18px; font-weight: 500;">Managed 2 technical talks and also gave a technical talk to students </li>
+                </dl>
+              </div>
+              <br>
+              <div id="page-4">
+                <h2 style="color: cornflowerblue; font-weight: 800;">skills</h2>
+                <div class="prgs">
+                <h4 style="color: chocolate; font-weight: 600; width: 50%; font-size: 20px;">C/C++</h4>
+                <div class="w3-light-grey w3-round-xlarge" style="width: 100%">
+                <div class="w3-container w3-blue w3-round-xlarge progress-bar-striped progress-bar-animated" style="width:60%"  >60%</div>
+               </div>
+               </div>
+               <div class="prgs">
+               <h4 style="color: chocolate; font-weight: 600; width: 80%; font-size: 20px;">Java</h4>
+                <div class="w3-light-grey w3-round-xlarge" style="width: 100%">
+                <div class="w3-container w3-blue w3-round-xlarge progress-bar-striped progress-bar-animated" style="width:50%"  >50%</div>
+               </div>
+              </div>
+              <div class="prgs" >
+                <span style="color: chocolate; font-weight: 600; width: 50%; font-size: 20px;">Android Studio</span>
+                 <div class="w3-light-grey w3-round-xlarge" style="width: 100%">
+                 <div class="w3-container w3-blue w3-round-xlarge progress-bar-striped progress-bar-animated" style="width:45%"  >45%</div>
+                </div>
+               </div>
+              <div class="prgs">
+                <h4 style="color: chocolate; font-weight: 600; width: 50%; font-size: 20px;">Python</h4>
+                 <div class="w3-light-grey w3-round-xlarge" style="width: 100%">
+                 <div class="w3-container w3-blue w3-round-xlarge progress-bar-striped progress-bar-animated" style="width:35%"  >35%</div>
+                </div>
+               </div>
+               <div class="prgs" >
+                <h4 style="color: chocolate; font-weight: 600; width: 50%; font-size: 20px;">HTML/CSS</h4>
+                 <div class="w3-light-grey w3-round-xlarge" style="width: 100%">
+                 <div class="w3-container w3-blue w3-round-xlarge progress-bar-striped progress-bar-animated" style="width:75%"  >75%</div>
+                </div>
+               </div>
+               <div class="prgs" >
+                <span style="color: chocolate; font-weight: 600; width: 50%; font-size: 20px;">JavaScript</span>
+                 <div class="w3-light-grey w3-round-xlarge" style="width: 100%">
+                 <div class="w3-container w3-blue w3-round-xlarge progress-bar-striped progress-bar-animated" style="width:45%"  >45%</div>
+                </div>
+               </div>
+               <div class="prgs" >
+                <span style="color: chocolate; font-weight: 600; width: 50%; font-size: 20px;">jQuery</span>
+                 <div class="w3-light-grey w3-round-xlarge" style="width: 100%">
+                 <div class="w3-container w3-blue w3-round-xlarge progress-bar-striped progress-bar-animated" style="width:45%"  >45%</div>
+                </div>
+               </div>
+               <div class="prgs" >
+                <h4 style="color: chocolate; font-weight: 600; width: 80%; font-size: 20px;">Data Structure</h4>
+                 <div class="w3-light-grey w3-round-xlarge" style="width: 100%">
+                 <div class="w3-container w3-blue w3-round-xlarge progress-bar-striped progress-bar-animated" style="width:50%"  >50%</div>
+                </div>
+               </div>
+               <div class="prgs" >
+                <h4 style="color: chocolate; font-weight: 600; width: 50%; font-size: 20px;">SQL</h4>
+                 <div class="w3-light-grey w3-round-xlarge" style="width: 100%">
+                 <div class="w3-container w3-blue w3-round-xlarge progress-bar-striped progress-bar-animated" style="width:50%"  >50%</div>
+                </div>
+               </div>
+               <div class="prgs" >
+                <h4 style="color: chocolate; font-weight: 600; width: 20%; font-size: 20px;">Photoshop</h4>
+                 <div class="w3-light-grey w3-round-xlarge" style="width: 100%">
+                 <div class="w3-container w3-blue w3-round-xlarge progress-bar-striped progress-bar-animated" style="width:80%"  >80%</div>
+                </div>
+               </div>
+               
+              
+              
+              </div>
+          
+          
+          </div>
+          </div>
+        
+          
+           
+        </div>
+      </section>
+
+    <!--  <section class="section my-work" data-section="section3" id="section3">
+        <div class="container">
+          <div class="section-heading">
+            <h2>My Gallery</h2>
+            <div class="line-dec"></div>
+          </div>
+          <div class="row">
+            <div class="isotope-wrapper">
+              <form class="isotope-toolbar">
+                <label
+                  ><input
+                    type="radio"
+                    data-type="*"
+                    checked=""
+                    name="isotope-filter"
+                  />
+                  <span>all</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="Sky"
+                    name="isotope-filter"
+                  />
+                  <span>Sky</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="Flower"
+                    name="isotope-filter"
+                  />
+                  <span>Flower</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="animals"
+                    name="isotope-filter"
+                  />
+                  <span>nature</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="animals"
+                    name="isotope-filter"
+                  />
+                  <span>Food</span></label
+                >
+              </form>
+              <div class="isotope-box">
+                <div class="isotope-item" data-type="Sky">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/img/sky2.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/img/sky2.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Second Title</h4>
+                      <span>please tell your friends</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="Sky">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/img/sky1.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/img/sky1.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Second Title</h4>
+                      <span>please tell your friends</span>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="isotope-item" data-type="Sky">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/img/sky3.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/img/sky3.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Second Title</h4>
+                      <span>please tell your friends</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="nature">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-01.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-01.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>First Title</h4>
+                      <span>free to use our template</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                
+
+                <div class="isotope-item" data-type="animals">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-03.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-03.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Item Third</h4>
+                      <span>customize anything</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="people">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-04.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-04.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Item Fourth</h4>
+                      <span>Re-distribution not allowed</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="nature">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-05.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-05.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Fifth Awesome</h4>
+                      <span>Ut sollicitudin risus</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="animals">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-06.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-06.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Awesome Sixth</h4>
+                      <span>Donec eget massa ante</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    -->
+      <section class="section contact-me" data-section="section4" id="section4">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Contact Me</h2>
+            <div class="line-dec"></div>
+          </div>
+          <div class="row">
+            <div class="right-content">
+              <div class="container">
+                <form id="contact" action="" method="post">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input
+                          name="name"
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Your name..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input
+                          name="email"
+                          type="text"
+                          class="form-control"
+                          id="email"
+                          placeholder="Your email..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <input
+                          name="subject"
+                          type="text"
+                          class="form-control"
+                          id="subject"
+                          placeholder="Subject..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <textarea
+                          name="message"
+                          rows="6"
+                          class="form-control"
+                          id="message"
+                          placeholder="Your message..."
+                          required=""
+                        ></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="button">
+                          Send Message
+                        </button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+   
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    
+
+    <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.easing.1.3.js"></script>
+  <script src="assets/js/jquery.waypoints.min.js"></script>
+  <script src="assets/js/jquery.stellar.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/jquery.animateNumber.min.js"></script>
+  <script src="assets/js/scrollax.min.js"></script>
+  
+  <script src="scroll.js"></script>
+  
+  <!--<script src="cursor.js"></script>-->
+
+  <script src="js/main.js"></script>
+
+   <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
         });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
     </script>
-
+    
   </body>
 </html>

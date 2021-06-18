@@ -1,0 +1,79 @@
+body{
+    height: 100vh;
+    cursor: url("assets/images/cur4.png"),auto;
+}
+
+.lcursor{
+
+    cursor: url("assets/images/cur5.png"),pointer;
+
+}
+
+/**body {
+    margin: 0;
+    height: 100vh;
+    cursor: none;
+    background: rgb(27, 27, 27);
+}
+
+.cursor {
+    width: 30px;
+    height: 30px;
+    border: 7px double rgb(193, 201, 84);
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 10ms;
+    transition-timing-function: ease-in-out;
+    animation: cursorAnim 0.5s infinite alternate;
+    pointer-events: none;
+}
+
+
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+}
+
+p {
+  color: white;
+  font-family: 'arial';
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.4em;
+}
+  p a {
+    color: teal;
+  }
+*/

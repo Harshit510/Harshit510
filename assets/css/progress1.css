@@ -1,0 +1,24 @@
+
+.w3-light-grey
+    {
+        color:rgb(253, 251, 251)!important;
+        background-color:#ccb0b0!important}
+.w3-blue
+    {
+        color:rgb(0, 0, 0)!important;
+        background-color:#2196F3!important}
+.w3-container
+    {
+        padding:0.01em 16px;
+    }
+.w3-round-xlarge
+    {
+        border-radius:12px
+    }
+.prgs{
+    width:45% ;
+    height: 100px;
+    margin: 5px;
+    display: inline-block;
+}
+
